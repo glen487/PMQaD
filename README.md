@@ -16,8 +16,8 @@ Primary made for [Kryptokrona Pools](https://www.kryptokrona.se) and [Github](ht
 ** Outgoing Connections
 * Compare block height with another node
 * Verify pool health (XKR pool do not support this set XKRPOOL="YES" to skip check)
-** Daemon
-** Wallet
+  * Daemon
+  * Wallet
 * Pool last payment
 * Pool lastblockfound
 
