@@ -23,8 +23,8 @@ Primary made for [Kryptokrona Pools](https://www.kryptokrona.se) and [Github](ht
 
 #### Changes
 
-0.1 First release
-0.2 Add some formating and loudspeaker icon
+* 0.1 First release
+* 0.2 Add some formating and loudspeaker icon
 
 #### Requirement 
 
