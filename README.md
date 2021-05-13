@@ -1,4 +1,4 @@
-PMQaD - Pool Monitor Quick and dirty
+PMQaD - Pool Monitor Quick and Dirty
 ====================================
 
 #### Basic features
@@ -6,20 +6,25 @@ Monitor [cryptonote-nodejs-pool](https://github.com/dvandal/cryptonote-nodejs-po
 The script checks to node and pool health and send alert to discord channel with webhook. 
 Ping a specific user supported.
 
-Primary made for [Kryptokrona](https://www.kryptokrona.se) and [Kryptokrona Github](https://github.com/kryptokrona/) but might work for others with small adjustmnents.
+Primary made for [Kryptokrona Pools](https://www.kryptokrona.se) and [Github](https://github.com/kryptokrona/) but might work for others with small adjustmnents.
 
 #### Functions
 * Check node daemon status (kryptokrona)
- * Status
- * Synced
- * Incoming Connections
- * Outgoing Connections
+** Status
+** Synced
+** Incoming Connections
+** Outgoing Connections
 * Compare block height with another node
 * Verify pool health (XKR pool do not support this set XKRPOOL="YES" to skip check)
-  * Daemon
-  * Wallet
+** Daemon
+** Wallet
 * Pool last payment
 * Pool lastblockfound
+
+#### Changes
+
+0.1 First release
+0.2 Add some formating and loudspeaker icon
 
 #### Requirement 
 
