@@ -20,11 +20,13 @@ Primary made for [Kryptokrona Pools](https://www.kryptokrona.se) and [Github](ht
 ** Wallet
 * Pool last payment
 * Pool lastblockfound
+* Redis server running
 
 #### Changes
 
 * 0.1 First release
 * 0.2 Add some formating and loudspeaker icon
+* 0.3 Moved settings to: config.cfg. Added node connections and redis-server checks. Changed parsing of json output to using "jq" instead. Added emoji codes.  
 
 #### Requirement 
 
@@ -45,7 +47,7 @@ cd PMQaD
 ```
 
 #### 2) Configure
-Edit the bash script to and adjust to your needs.
+Edit the config.cfg and adjust to your needs.
 
 * POOL - hostname.domain.tld
 * NODE - hostname.domain.tld
@@ -65,18 +67,30 @@ crontab -e
 15 * * * * ./pmqad.bash
 ```
 
-#### Sample
+#### Sample config.cfg
 
 ```
 POOL="floki.kryptokrona.se" # Pool hostname
-NODE="wasa.kryptokrona.se" # Node hostname to compare height
+NODE="gota.kryptokrona.se" # Node hostname to compare height
 WEBHOOK_URL="https://discord.com/api/webhooks/<replace with your webbhook address>" # URL for channel discord
 PING="<@<replace with your discord ID>>" # Discord ID - long number ,  enabled developer mode to get it Format is: <@12345678912345>
-NODEHEIGHT="0"
 PAYMENTTIME="7200" # Seconds - 2 hours
 BLOCKFOUNDTIME="3600" # Seconds - 1 hours
 XKRPOOL="NO" # If using XKR orginal pool set to YES
 ```
+
+#### Sample output
+```bash
+2021-05-20 07:50:51 - Node connections IN/OUT: 0/6 ✔
+2021-05-20 07:50:51 - Node block height:  711366 Network: 711366 ✔
+2021-05-20 07:50:51 - Node status OK ✔ Synced: true ✔
+2021-05-20 07:50:51 - Pool daemon: ok ✔
+2021-05-20 07:50:51 - Pool wallet: ok ✔
+2021-05-20 07:50:51 - Pool last payment: 54.31 min ✔
+2021-05-20 07:50:51 - Pool last block found: 42.21 min ✔
+2021-05-20 07:50:51 - Redis server up ✔
+```
+
 License
 -------
 N/A
