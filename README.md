@@ -44,6 +44,8 @@ Clone the repository
 ```bash
 git clone https://github.com/glen487/PMQaD
 cd PMQaD
+sudo chmod +x pmqad.bash
+sed -i -e 's/\r$//' pmqad.bash
 ```
 
 #### 2) Configure
