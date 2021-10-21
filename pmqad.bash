@@ -5,7 +5,7 @@ NOW=$(date +%s)
 DATE=$(date '+%F %T')
 NODEHEIGHT="0"
 
-configfile='./config.txt'
+configfile='./config.cfg'
 source "$configfile"
 
 # Colors
