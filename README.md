@@ -10,14 +10,14 @@ Primary made for [Kryptokrona Pools](https://www.kryptokrona.se) and [Github](ht
 
 #### Functions
 * Check node daemon status (kryptokrona)
-** Status
-** Synced
-** Incoming Connections
-** Outgoing Connections
+ * Status
+ * Synced
+ * Incoming Connections
+ * Outgoing Connections
 * Compare block height with another node
 * Verify pool health (XKR pool do not support this set XKRPOOL="YES" to skip check)
-** Daemon
-** Wallet
+ * Daemon
+ * Wallet
 * Pool last payment
 * Pool lastblockfound
 * Redis server running
